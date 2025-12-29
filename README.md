@@ -26,6 +26,16 @@ Dự án này triển khai pipeline phân cụm khách hàng toàn diện sử d
 - **ROI Marketing**: Chiến lược cụ thể cho từng phân khúc khách hàng
 - **Xuất Sắc Kỹ Thuật**: Xử lý tối ưu bộ nhớ, kết quả có thể tái tạo
 
+## 🌐 Demo Online
+
+🚀 **Truy cập Dashboard Tương Tác**: [https://shopcluster-huehoang.streamlit.app/](https://shopcluster-huehoang.streamlit.app/)
+
+Dashboard bao gồm 4 tab chính:
+- **Tổng Quan**: Insights tổng thể về phân cụm và luật kết hợp
+- **Phân Tích Luật**: Khám phá 83 luật FP-Growth đã lọc
+- **Phân Cụm Khách Hàng**: Profiling chi tiết 2 cụm khách hàng
+- **Khuyến Nghị Marketing**: Chiến lược cá nhân hóa cho từng phân khúc
+
 ## 📁 Cấu Trúc Dự Án
 
 ```
