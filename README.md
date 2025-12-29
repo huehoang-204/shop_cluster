@@ -30,28 +30,38 @@ Dự án này triển khai pipeline phân cụm khách hàng toàn diện sử d
 
 ```
 shop_cluster/
+├── .gitignore.txt                      # Quy tắc bỏ qua file Git
+├── LICENSE.txt                         # Giấy phép dự án
+├── README.md                           # Tài liệu dự án (file này)
+├── requirements.txt                    # Dependencies Python
+├── run_papermill.py                    # Script thực thi notebook hàng loạt
 ├── data/
 │   ├── raw/
 │   │   └── online_retail.csv          # Dataset bán lẻ UK gốc
 │   └── processed/
 │       ├── cleaned_uk_data.csv         # Giao dịch đã tiền xử lý
-│       ├── rules_fpgrowth_filtered.csv # 83 luật kết hợp đã lọc
+│       ├── rules_apriori_filtered.csv # Luật Apriori đã lọc
+│       ├── rules_fpgrowth_filtered.csv # 83 luật FP-Growth đã lọc
 │       └── customer_clusters_from_rules.csv  # Phân công cụm cuối cùng
 ├── notebooks/
 │   ├── preprocessing_and_eda.ipynb     # Làm sạch dữ liệu & khám phá
 │   ├── basket_preparation.ipynb        # Tiền xử lý giao dịch
-│   ├── fp_growth_modelling.ipynb       # Khai thác luật kết hợp
+│   ├── fp_growth_modelling.ipynb       # Khai thác luật kết hợp FP-Growth
 │   ├── apriori_modelling.ipynb         # Cách tiếp cận Apriori thay thế
-│   ├── compare_apriori_fpgrowth.ipynb  # So sánh thuật toán
+│   ├── compare_apriori_fpgrowth.ipynb  # So sánh thuật toán khai thác
 │   ├── clustering_from_rules.ipynb     # Pipeline phân cụm chính
 │   ├── basket_clustering.ipynb         # Phân tích phân cụm giỏ hàng/sản phẩm
 │   └── runs/                           # Đầu ra notebook đã thực thi
+│       ├── preprocessing_and_eda_run.ipynb
+│       ├── basket_preparation_run.ipynb
+│       ├── fp_growth_modelling_run.ipynb
+│       ├── apriori_modelling_run.ipynb
+│       ├── compare_apriori_fpgrowth_run.ipynb
+│       ├── clustering_from_rules_run.ipynb
+│       └── basket_clustering_run.ipynb
 ├── src/
 │   └── cluster_library.py              # Tiện ích phân cụm tùy chỉnh
-├── app.py                              # Dashboard Streamlit
-├── requirements.txt                    # Dependencies Python
-├── run_papermill.py                    # Thực thi notebook hàng loạt
-└── README.md                           # File này
+└── app.py                              # Dashboard Streamlit
 ```
 
 ## 🚀 Cài Đặt & Thiết Lập
